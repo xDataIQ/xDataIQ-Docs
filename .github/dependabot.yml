@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    versioning-strategy: lockfile-only
+    directory: /core
+    schedule:
+      interval: weekly
+    ignore:
+      - dependency-name: projen
+      - dependency-name: "@aws-cdk*"
+
